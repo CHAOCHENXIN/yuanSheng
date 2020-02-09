@@ -1,0 +1,607 @@
+.pc .pcHeadWai {
+  width: 100%;
+  height: 80px;
+  background: white;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.pc .pcHeadWai .pcHead {
+  position: absolute;
+  left: 0;
+  right: 0;
+  float: left;
+  width: 1100px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+.pc .pcHeadWai .pcHead .pcHeadLogo {
+  margin-top: 30px;
+}
+.pc .pcHeadWai .pcHead .pcHeadRight {
+  margin-top: 50px;
+}
+.pc .pcHeadWai .pcHead .pcHeadRight ul {
+  display: flex;
+}
+.pc .pcHeadWai .pcHead .pcHeadRight ul li {
+  margin-left: 40px;
+  color: #000000;
+  font-size: 16px;
+  line-height: 21px;
+}
+.pc .pcHeadWai .pcHead .pcHeadRight ul li a span {
+  display: block;
+}
+.pc .pcHeadWai .pcHead .pcHeadRight ul li a span:nth-child(1) {
+  color: black;
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  transition: 2s width;
+}
+.pc .pcHeadWai .pcHead .pcHeadRight ul li:hover a span {
+  width: 100%;
+}
+.pc .pcHeadWai .pcHead i {
+  position: absolute;
+  left: 0;
+  margin: 0 auto;
+  top: 80px;
+  transition: left 0.5s;
+}
+.pc .pcYem .yeM-button {
+  position: absolute;
+  right: 60px;
+  top: 30%;
+}
+.pc .pcYem .yeM-button li {
+  width: 25px;
+  height: 25px;
+  background: yellowgreen;
+  border: 4px solid yellow;
+  border-radius: 100px;
+  margin-top: 30px;
+}
+.pc .pcYem .yeM-button .yeM-button-true {
+  background: yellow;
+  border: 4px solid yellowgreen;
+}
+.yeMButton {
+  position: absolute;
+  right: 60px;
+  top: 30%;
+}
+.yeMButton li {
+  width: 25px;
+  height: 25px;
+  background: yellowgreen;
+  border: 4px solid yellow;
+  border-radius: 100px;
+  margin-top: 30px;
+}
+.yeMButton .yeM-button-true {
+  background: yellow;
+  border: 4px solid yellowgreen;
+}
+.pc .pcYem > ul > li:nth-child(1) .pcYem1 {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  position: absolute;
+  transition: top 1s;
+  top: -300px;
+}
+.pc .pcYem > ul > li:nth-child(1) .pcYem1 .aaaaa {
+  visibility: visible !important;
+}
+.pc .pcYem > ul > li:nth-child(1) .pcYem1 .pcYem {
+  width: 1100px;
+  height: 520px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 72px;
+  color: black;
+  padding: 50px;
+  visibility: hidden;
+}
+.pc .pcYem > ul > li:nth-child(1) .pcYem1 .pcYem:nth-child(1) {
+  background: yellow;
+}
+.pc .pcYem > ul > li:nth-child(1) .pcYem1 .pcYem:nth-child(2) {
+  background: yellowgreen;
+}
+.pc .pcYem > ul > li:nth-child(1) .pcYem1 .pcYem:nth-child(3) {
+  background: greenyellow;
+}
+.pc .pcYem > ul > li:nth-child(1) .pcYem1 .pcYem:nth-child(4) {
+  background: #f90;
+}
+.pc .pcYem > ul > li:nth-child(1) .pcYem1 .pcYem.xianshi {
+  z-index: 2;
+  visibility: visible;
+  animation: rightShow 1s linear;
+}
+.pc .pcYem > ul > li:nth-child(1) .pcYem1 .pcYem.yincang {
+  visibility: visible;
+  animation: leftHide 1s linear;
+  transform: scale(0.8);
+}
+.pc .pcYem > ul > li:nth-child(1) ol {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  margin-left: -120px;
+  transition: top 1s;
+}
+.pc .pcYem > ul > li:nth-child(1) ol > li {
+  width: 21px;
+  height: 21px;
+  background: pink !important;
+  border-radius: 100px;
+  border: 4px solid #b41;
+  margin-left: 25px;
+}
+.pc .pcYem > ul > li:nth-child(1) ol .oneOlLi {
+  background: #b41 !important;
+  border: 4px solid pink;
+}
+.pc .pcYem > ul > li:nth-child(2) .pcYem2 .pcYem2-1 {
+  font-size: 80px;
+  color: blue;
+  line-height: 0.8;
+  font-weight: bold;
+  letter-spacing: -5px;
+  margin: 50px;
+}
+.pc .pcYem > ul > li:nth-child(2) .pcYem2 .pcYem2-2 {
+  width: 400px;
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 50px;
+}
+.pc .pcYem > ul > li:nth-child(2) .pcYem2 ul {
+  width: 480px;
+  height: 396px;
+  position: absolute;
+  right: 50px;
+  top: 200px;
+  transition: top 1s;
+}
+.pc .pcYem > ul > li:nth-child(2) .pcYem2 ul .item {
+  width: 120px;
+  height: 132px;
+  position: relative;
+  transform-style: preserve-3d;
+  float: left;
+}
+.pc .pcYem > ul > li:nth-child(2) .pcYem2 ul .item span {
+  display: block;
+  width: 120px;
+  height: 132px;
+  transition: 0.5s linear;
+}
+.pc .pcYem > ul > li:nth-child(2) .pcYem2 ul .item span.itemImg {
+  background-image: url("../../static/img/apcoa.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.pc .pcYem > ul > li:nth-child(2) .pcYem2 ul .item span.itemTxt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #bb4411;
+  color: greenyellow;
+  padding: 15px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.pc .pcYem > ul > li:nth-child(2) .pcYem2 ul .item:hover .itemImg {
+  transform: rotateY(180deg);
+}
+.pc .pcYem > ul > li:nth-child(2) .pcYem2 ul .item:hover .itemTxt {
+  transform: rotateY(360deg);
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-1 {
+  margin: 50px 0px 100px 50px;
+  color: white;
+  font-size: 80px;
+  line-height: 0.8;
+  font-weight: bold;
+  letter-spacing: -5px;
+  transition: color 3s;
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul {
+  margin-left: 50px;
+  display: flex;
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul .Y3Item {
+  width: 220px;
+  height: 133px;
+  margin: 0 1px;
+  background: #bb4411;
+  position: relative;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul .Y3Item:nth-child(4) {
+  width: 332px;
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul .Y3Item span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul .Y3Item span.Y3ItemH {
+  transition: transform 0.5s;
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul .Y3Item span.Y3ItemH1 {
+  background-image: url("../../static/img/worksimg1.jpg");
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul .Y3Item span.Y3ItemH2 {
+  background-image: url("../../static/img/worksimg2.jpg");
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul .Y3Item span.Y3ItemH3 {
+  background-image: url("../../static/img/worksimg3.jpg");
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul .Y3Item span.Y3ItemH4 {
+  background-image: url("../../static/img/worksimg4.jpg");
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul .Y3Item span.Y3ItemQ {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: yellowgreen;
+  font-size: 18px;
+  opacity: 0;
+  transition: 0.5s opacity;
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul .Y3Item span.Y3ItemQ i {
+  display: block;
+  width: 32px;
+  height: 34px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-image: url("../../static/img/zoomico.png");
+  transition: background-position 0.5s;
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul .Y3Item span.Y3ItemQ i:hover {
+  background-position: 0 -36px;
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul .Y3Item:hover .Y3ItemQ {
+  opacity: 1;
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-2 > ul .Y3Item:hover .Y3ItemH {
+  transform: rotate(20deg) scale(1.3);
+}
+.pc .pcYem > ul > li:nth-child(3) .pcYem3 .pcYem3-3 {
+  background: url("../../static/img/robot.png") no-repeat;
+  position: absolute;
+  left: 900px;
+  top: 170px;
+  width: 167px;
+  height: 191px;
+  animation: move 2s linear infinite;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-1 {
+  color: #009ee0;
+  font-size: 80px;
+  line-height: 0.8;
+  font-weight: bold;
+  letter-spacing: -5px;
+  margin: 50px 0 100px 50px;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-2 {
+  margin-left: 50px;
+  width: 400px;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-2 span {
+  color: white;
+  line-height: 1.5;
+  font-size: 15px;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-3 {
+  width: 270px;
+  height: 210px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  position: absolute;
+  left: 750px;
+  top: 50px;
+  overflow: hidden;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-3:hover span img {
+  transform: scale(1);
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-3 span {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-3 span img {
+  transform: scale(1.3);
+  transition: 0.5s transform;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-3 ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-3 ul li {
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-3 ul li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-4 {
+  width: 270px;
+  height: 210px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  position: absolute;
+  left: 600px;
+  top: 290px;
+  overflow: hidden;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-4:hover span img {
+  transform: scale(1);
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-4 span {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-4 span img {
+  transform: scale(1.3);
+  transition: 0.5s transform;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-4 ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-4 ul li {
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+.pc .pcYem > ul > li:nth-child(4) .pcYem4 .pcYem4-4 ul li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.pc .pcYem > ul > li:nth-child(5) .pcYem5 .team-1 {
+  float: left;
+  width: 400px;
+  margin: 50px;
+  color: #009ee0;
+  font-size: 80px;
+  line-height: 0.8;
+  font-weight: bold;
+  letter-spacing: -5px;
+}
+.pc .pcYem > ul > li:nth-child(5) .pcYem5 .team-2 {
+  float: right;
+  width: 400px;
+  margin: 50px;
+  color: white;
+  line-height: 1.5;
+  font-size: 15px;
+}
+.pc .pcYem > ul > li:nth-child(5) .pcYem5 .team-2 p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  line-height: 1.5em;
+}
+.pc .pcYem > ul > li:nth-child(5) .pcYem5 .team-3 {
+  width: 944px;
+  height: 448px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 250px;
+  margin: auto;
+}
+.pc .pcYem > ul > li:nth-child(5) .pcYem5 .team-3 .list {
+  width: 100%;
+  height: 100%;
+}
+.pc .pcYem > ul > li:nth-child(5) .pcYem5 .team-3 .list .item {
+  background-image: url("../../static/img/team.png");
+  background-repeat: no-repeat;
+  float: left;
+  width: 12.5%;
+  height: 100%;
+  transition: opacity 0.5s;
+}
+.pc .pcYem > ul > li:nth-child(5) .pcYem5 .team-3 .qipaoOc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0px) rotateY(0deg);
+  }
+  49% {
+    transform: translateX(-399px) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(-400px) rotateY(180deg);
+  }
+  99% {
+    transform: translateX(1px) rotateY(179deg);
+  }
+  100% {
+    transform: translateX(0px) rotateY(0deg);
+  }
+}
+@keyframes leftHide {
+  0% {
+    transform: translateX(0px) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(-40%) rotateY(30deg) scale(0.8);
+  }
+  100% {
+    transform: translateZ(-200px) scale(0.8);
+  }
+}
+@keyframes rightShow {
+  0% {
+    transform: translateZ(-200px);
+  }
+  50% {
+    transform: translateX(40%) rotateY(-30deg) scale(1);
+  }
+  100% {
+    transform: translateX(0px) rotateY(0deg);
+  }
+}
+@keyframes leftShow {
+  0% {
+    transform: translateX(0px) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(40%) rotateY(30deg) scale(0.8);
+  }
+  100% {
+    transform: translateZ(200px) scale(0.8);
+  }
+}
+@keyframes rightHide {
+  0% {
+    transform: translateZ(-200px);
+  }
+  50% {
+    transform: translateX(40%) rotateY(-30deg) scale(1);
+  }
+  100% {
+    transform: translateX(0px) rotateY(0deg);
+  }
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  font: 14px "微软雅黑";
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+li {
+  list-style: none;
+}
+img {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.pc {
+  position: relative;
+  height: 100%;
+}
+.pc .pcYem {
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.pc .pcYem > ul {
+  width: 100%;
+  position: absolute;
+  transition: 1s top;
+}
+.pc .pcYem > ul > li {
+  line-height: 100%;
+  background-position: 50% 50%;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.pc .pcYem > ul > li > div {
+  width: 1100px;
+  height: 520px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.pc .pcYem > ul > li:nth-child(1) {
+  background: url("../../static/img/bg1.jpg") no-repeat;
+}
+.pc .pcYem > ul > li:nth-child(2) {
+  background: url("../../static/img/bg2.jpg") no-repeat;
+}
+.pc .pcYem > ul > li:nth-child(3) {
+  background: url("../../static/img/bg3.jpg") no-repeat;
+}
+.pc .pcYem > ul > li:nth-child(4) {
+  background: url("../../static/img/bg4.jpg") no-repeat;
+}
+.pc .pcYem > ul > li:nth-child(5) {
+  background: url("../../static/img/bg5.jpg") no-repeat;
+}

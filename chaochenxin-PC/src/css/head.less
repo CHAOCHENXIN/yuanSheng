@@ -1,0 +1,65 @@
+.pc{
+  .pcHeadWai{
+    width: 100%;
+    height: 80px;
+    background: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    .pcHead{
+      position: absolute;
+      left: 0;
+      right: 0;
+      float: left;
+      width: 1100px;
+      height: 80px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      //menuIndicator
+      z-index: 2;
+      .pcHeadLogo{
+        margin-top: 30px;
+      }
+      .pcHeadRight{
+        margin-top: 50px;
+        ul{
+          display: flex;
+          li{
+            margin-left: 40px;
+            color: #000000;
+            font-size: 16px;
+            line-height: 21px;
+            a{
+              span{
+                display: block;
+                &:nth-child(1){
+                  color: black;
+                  position: absolute;
+                  width: 0;
+                  overflow: hidden;
+                  transition: 2s width;
+                }
+              }
+            }
+            &:hover{
+              a{
+                span{
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      i{
+        position: absolute;
+        left: 0;
+        margin:0 auto;
+        top: 80px;
+        transition: left .5s;
+      }
+    }
+  }
+}

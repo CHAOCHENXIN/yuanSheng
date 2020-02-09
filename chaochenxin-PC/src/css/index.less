@@ -1,0 +1,72 @@
+@import "head.less";
+@import "minix.less";
+@import "one.less";
+@import "two.less";
+@import "three.less";
+@import "four.less";
+@import "five.less";
+@import "DynamicEffect.less";
+
+
+//公共样式
+html,body{height: 100%;overflow: hidden;}
+html,body,h1,h2,h3,h4,h5,h6,p,ul,li{margin: 0px;padding: 0px;font: 14px "微软雅黑";}
+a{text-decoration: none;display: block;}
+li{list-style: none;}
+img{display: block;}
+*{box-sizing: border-box}
+
+//清除浮动
+.clearfix{zoom: 1;}
+.clearfix:after{content: "";display: block;clear: both;}
+
+//头部
+.pc{
+  position: relative;
+  height: 100%;
+  .pcYem{
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    > ul{
+      width: 100%;
+      position: absolute;
+      transition: 1s top;
+      > li{
+        line-height: 100%;
+        //元素应距离每个包含元素的边的距离
+        background-position: 50% 50%;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        > div{
+          width: 1100px;
+          height: 520px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top:0;
+          bottom: 0;
+          margin: auto;
+        }
+        &:nth-child(1){
+          background: url("../../static/img/bg1.jpg") no-repeat;
+        }
+        &:nth-child(2){
+          background: url("../../static/img/bg2.jpg") no-repeat;
+        }
+        &:nth-child(3){
+          background: url("../../static/img/bg3.jpg") no-repeat;
+        }
+        &:nth-child(4){
+          background: url("../../static/img/bg4.jpg") no-repeat;
+        }
+        &:nth-child(5){
+          background: url("../../static/img/bg5.jpg") no-repeat;
+        }
+      }
+    }
+  }
+}

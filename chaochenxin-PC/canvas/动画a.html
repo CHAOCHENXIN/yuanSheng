@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .a{
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+<div class="a"></div>
+<script>
+  var a = document.querySelector('.a')
+  var arr = []
+  for (let i = 0; i < 300; i++) {
+    arr.push(i)
+  }
+  var aX = 0
+  var aY = 0
+  var a1 = 0
+  var a2 = 0
+  setInterval(function () {
+    a1++
+    a2++
+      a.style.left = aX + a1 + "px"
+      a.style.top = aY + a2 + "px"
+  },20)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+.pc{
+  .pcYem{
+    > ul{
+      > li{
+        &:nth-child(3){
+          .pcYem3{
+            .pcYem3-1{
+              margin: 50px 0px 100px 50px;
+              color: white;
+              font-size: 80px;
+              line-height: 0.8;
+              font-weight: bold;
+              letter-spacing: -5px;
+              transition: color 3s;
+            }
+            .pcYem3-2{
+              > ul{
+                margin-left: 50px;
+                display: flex;
+                .Y3Item{
+                  width: 220px;
+                  height: 133px;
+                  margin: 0 1px;
+                  background: #bb4411;
+                  position: relative;
+                  transform-style: preserve-3d;
+                  overflow: hidden;
+                  &:nth-child(4){
+                    width: 332px;
+                  }
+                  span{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    &.Y3ItemH{
+                      transition: transform .5s;
+                    }
+
+                    &.Y3ItemH1{
+                      background-image: url("../../static/img/worksimg1.jpg");
+                    }
+                    &.Y3ItemH2{
+                      background-image: url("../../static/img/worksimg2.jpg");
+                    }
+                    &.Y3ItemH3{
+                      background-image: url("../../static/img/worksimg3.jpg");
+                    }
+                    &.Y3ItemH4{
+                      background-image: url("../../static/img/worksimg4.jpg");
+                    }
+
+                    &.Y3ItemQ{
+                      padding: 15px;
+                      background-color: rgba(0,0,0,.8);
+                      color: yellowgreen;
+                      font-size: 18px;
+                      opacity: 0;
+                      transition: .5s opacity;
+                      i{
+                        display: block;
+                        width: 32px;
+                        height: 34px;
+                        margin: 0 auto;
+                        margin-top: 10px;
+                        background-image: url("../../static/img/zoomico.png");
+                        transition: background-position.5s;
+                        &:hover{
+                          background-position: 0 -36px;
+                        }
+                      }
+                    }
+                  }
+
+                  &:hover{
+                    .Y3ItemQ{
+                      opacity: 1;
+                    }
+                    .Y3ItemH{
+                      transform: rotate(20deg) scale(1.3);
+                    }
+                  }
+                }
+              }
+            }
+            .pcYem3-3{
+              background: url("../../static/img/robot.png") no-repeat;
+              position: absolute;
+              left: 900px;
+              top: 170px;
+              width: 167px;
+              height: 191px;
+              animation: move 2s linear infinite;
+            }
+          }
+        }
+      }
+    }
+  }
+}

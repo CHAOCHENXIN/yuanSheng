@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html{
+      width: 100%;
+      height: 100%;
+    }
+    body{
+      width: 100%;
+      height: 100%;
+      background-color: bisque;
+      position: relative;
+    }
+    canvas{
+      background-color: white;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <canvas></canvas>
+  <script>
+    var oc = document.querySelector('canvas')
+    var ctx = oc.getContext("2d")
+    oc.width = 1000
+    oc.height = 600
+    var arr = []
+
+    //创建数组参数
+    setInterval(function () {
+      var yuanCan = {
+        x:Math.floor(Math.random()*oc.width),
+        y:Math.floor(Math.random()*oc.height),
+        radius:20,
+        r:Math.floor(Math.random()*255),
+        g:Math.floor(Math.random()*255),
+        b:Math.floor(Math.random()*255),
+        a:1
+      }
+      arr.push(yuanCan)
+    },50)
+
+
+    //绘制圆 拿arr里面的参数
+    setInterval(function () {
+      //覆盖画布
+      ctx.clearRect(0,0,oc.width,oc.height);
+
+      //修改圆数组及参数
+      arr.forEach(function (item,index) {
+        item.a-=0.03
+        item.radius+=5
+        if (item.a <= 0) {
+          arr.splice(index,1)
+        }
+      })
+
+      //绘制圆
+      arr.forEach(function (item, index) {
+        ctx.save()
+        ctx.beginPath()
+
+        ctx.fillStyle = `rgba(${item.r},${item.g},${item.b},${item.a})`
+        ctx.arc(item.x,item.y,item.radius,0,2*Math.PI)
+        ctx.fill()
+        ctx.restore()
+      })
+    },1000/60)
+
+  </script>
+</body>
+</html>

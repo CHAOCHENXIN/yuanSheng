@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html{
+      width: 100%;
+      height: 100%;
+    }
+    body{
+      width: 100%;
+      height: 100%;
+      background-color: bisque;
+      position: relative;
+    }
+    canvas{
+      background-color: white;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <canvas></canvas>
+  <script>
+    var oc = document.querySelector('canvas')
+    var ctx = oc.getContext("2d")
+    oc.width = 1000
+    oc.height = 600
+    var arr = []
+
+    //创建数组参数
+    setInterval(function () {
+      var x = Math.floor(Math.random()*oc.width)
+      var y = oc.height
+      var radius = 20
+      var r = Math.floor(Math.random()*255)
+      var g = Math.floor(Math.random()*255)
+      var b = Math.floor(Math.random()*255)
+      var a = 1
+      var startX = x
+      var startY = y
+      var deg = 0
+      var degJX = Math.floor(Math.random()*40) + 10
+      var degJY = Math.floor(Math.random()*40) + 10
+
+      arr.push({
+        x,
+        y,
+        radius,
+        r,
+        g,
+        b,
+        a,
+        startX,
+        startY,
+        deg,
+        degJX,
+        degJY
+      })
+    },1000/60)
+
+
+    //绘制圆 拿arr里面的参数
+    setInterval(function () {
+      //覆盖画布
+      ctx.clearRect(0,0,oc.width,oc.height);
+
+      //修改圆数组及参数
+      arr.forEach(function (item,index) {
+        item.a-=0.0001
+        item.radius+=.1
+        item.deg+=10
+        //一个定值加一个路径运动轨迹就是这个路径的运动轨迹
+        item.x =  item.startX - (Math.sin( (item.deg*Math.PI)/180 )*item.degJX)
+        item.y =  item.startY - ((item.deg*Math.PI)/180*item.degJY)
+        if (item.a <= 0) {
+          arr.splice(index,1)
+        }
+      })
+
+      //绘制圆
+      arr.forEach(function (item, index) {
+        ctx.save()
+        ctx.beginPath()
+
+        ctx.fillStyle = `rgba(${item.r},${item.g},${item.b},${item.a})`
+        ctx.arc(item.x,item.y,item.radius,0,2*Math.PI)
+        ctx.fill()
+        ctx.restore()
+      })
+    },1000/60)
+
+  </script>
+</body>
+</html>

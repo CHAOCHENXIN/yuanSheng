@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html{
+      width: 100%;
+      height: 100%;
+    }
+    body{
+      width: 100%;
+      height: 100%;
+      background-color: bisque;
+      position: relative;
+    }
+    canvas{
+      background-color: white;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <canvas></canvas>
+
+
+<script>
+
+  var oc = document.querySelector('canvas')
+  var ctx = oc.getContext("2d")
+  oc.width = 1000
+  oc.height = 600
+
+  // item.x =  item.startX - (Math.sin( (item.deg*Math.PI)/180 )*item.stepX)
+  // item.y =  item.startY - ((item.deg*Math.PI)/180*item.stepY)
+
+
+</script>
+</body>
+</html>
